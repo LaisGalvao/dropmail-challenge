@@ -7,3 +7,19 @@ import TheWelcome from '../components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+<script>
+import main from '../graphql/index'
+export default {
+  created() {
+    main(`mutation {
+    introduceSession {
+        id,
+        expiresAt,
+        addresses {
+          address
+        }
+    }
+}`)
+  }
+}
+</script>
