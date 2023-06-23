@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  my_frontend:
+    container_name: dropmail
+    image: node:lts
+    working_dir: /media/lais/Backup/DEV e aulas/dev-geral/challenge-dropmail
+    entrypoint: /bin/bash
+    expose:
+      - 8002
+    volumes:
+      - ./dropmail/:/media/lais/Backup/DEV e aulas/dev-geral/challenge-dropmail
+    tty: true

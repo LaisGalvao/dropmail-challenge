@@ -55,3 +55,13 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+### run on docker instance
+
+```sh
+sudo docker compose up -d
+```
+
+```sh
+docker exec -it my_frontend /bin/bash
+```
